@@ -34,10 +34,45 @@ document.getElementById("output3").innerHTML = y;
 btn4 = document.getElementById("btn4")
 btn4.addEventListener("click",() =>{
 
-let gas = document.getElementById("gas").value
-let miles = document.getElementById("miles").value
+let gas = parseFloat(document.getElementById("gas").value)
+let miles = parseFloat(document.getElementById("miles").value)
 let MPG = miles / gas
 
-let a = `Your car has an MPG of ${MPG}`
+let a = `Your car has an MPG of ${MPG.toFixed(2)}`
 document.getElementById("output4").innerHTML = a
 })
+//no. 5 JavaScript
+const btn5 = document.getElementById("btn5");
+const output5 = document.getElementById("output5");
+btn5.addEventListener("click", () => {
+    let celsius =  parseFloat(document.getElementById("celsius").value);
+    let fahrenheit = (9/5) * celsius + 32;
+    //&#8451 is degree Celsius sign and &#8457 is Fahrenheit sign.
+    let message5 = `<strong>Answer:</strong> ${celsius} &#8451; is converted to ${fahrenheit} &#845A7.`;
+    document.getElementById("output5").innerHTML = x;
+})
+
+//no. 6 JavaScript
+const btn6 = document.getElementById("btn6");
+const output6 = document.getElementById("output6");
+btn6.addEventListener("click", () => {
+    let cookiesEaten = parseInt(document.getElementById("cookiesEaten").value);
+    let totalCalories = (cookiesEaten / 40) * 10 * 300;
+    let message6 = `Result:You eat ${cookiesEaten} cookies and consumed
+    ${totalCalories.toFixed(0)} calories.`;
+    output6.innerHTML = c;
+})
+
+//no.7 JavaScript
+function calculatePercentage() {
+    let Males = document.getElementById("numMales").value;
+    let Females = document.getElementById("numFemales").value;
+    let totalStudents = parseInt(Males) + parseInt(Females);
+    let maleP = (parseInt(Males) / totalStudents) * 100;
+    let femaleP = (parseInt(Females) / totalStudents) * 100;
+    let message = `Percentage of males: ${maleP.toFixed(2)}%<br>
+    Percentage of females: ${femaleP.toFixed(2)}%`;
+    document.getElementById("result").innerHTML = b;
+    return false;
+}
+
