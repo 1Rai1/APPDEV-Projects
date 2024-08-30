@@ -48,7 +48,7 @@ btn5.addEventListener("click", () => {
     let celsius =  parseFloat(document.getElementById("celsius").value);
     let fahrenheit = (9/5) * celsius + 32;
     //&#8451 is degree Celsius sign and &#8457 is Fahrenheit sign.
-    let message5 = `<strong>Answer:</strong> ${celsius} &#8451; is converted to ${fahrenheit} &#845A7.`;
+    let x = `<strong>Answer:</strong> ${celsius} &#8451; is converted to ${fahrenheit} &#845A7.`;
     document.getElementById("output5").innerHTML = x;
 })
 
@@ -58,7 +58,7 @@ const output6 = document.getElementById("output6");
 btn6.addEventListener("click", () => {
     let cookiesEaten = parseInt(document.getElementById("cookiesEaten").value);
     let totalCalories = (cookiesEaten / 40) * 10 * 300;
-    let message6 = `Result:You eat ${cookiesEaten} cookies and consumed
+    let c = `Result:You eat ${cookiesEaten} cookies and consumed
     ${totalCalories.toFixed(0)} calories.`;
     output6.innerHTML = c;
 })
@@ -70,7 +70,7 @@ function calculatePercentage() {
     let totalStudents = parseInt(Males) + parseInt(Females);
     let maleP = (parseInt(Males) / totalStudents) * 100;
     let femaleP = (parseInt(Females) / totalStudents) * 100;
-    let message = `Percentage of males: ${maleP.toFixed(2)}%<br>
+    let b = `Percentage of males: ${maleP.toFixed(2)}%<br>
     Percentage of females: ${femaleP.toFixed(2)}%`;
     document.getElementById("result").innerHTML = b;
     return false;
