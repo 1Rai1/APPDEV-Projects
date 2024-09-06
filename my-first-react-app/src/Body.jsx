@@ -18,8 +18,9 @@ Body.propTypes = {
     age: PropTypes.number
 }
 Body.defaultProps ={
-    name: "Guest" ,
+    name: "Guest",
     food: "Unknown",
     isHealthy: false,
     age : 0
 }
+

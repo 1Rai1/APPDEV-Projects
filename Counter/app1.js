@@ -4,6 +4,8 @@ let count=0
 //select value and buttons
 const btns = document.querySelectorAll('.btn')
 const value = document.querySelector('#value')
+document.getElementById('back').onclick = function() {
+    window.location.href = 'http://127.0.0.1:5500/NavBar/index.html';}
 
 btns.forEach((btn) =>{
     btn.addEventListener('click', (e) =>{

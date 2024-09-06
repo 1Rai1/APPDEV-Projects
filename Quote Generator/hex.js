@@ -9,6 +9,8 @@ const quotes = [
 const colors = ["green", "red", "rgba(133,122,200)", "#f15025"]
 const btn = document.getElementById("btn")
 const color = document.querySelector(".color")
+document.getElementById('back').onclick = function() {
+    window.location.href = 'http://127.0.0.1:5500/NavBar/index.html';}
 
 let quotess = 0; 
 
