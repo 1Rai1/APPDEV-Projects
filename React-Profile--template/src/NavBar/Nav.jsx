@@ -15,13 +15,7 @@ export default function NavBar() {
         {/* Links */}
         <ul className="links show-links">
           <li>
-            <a href="http://127.0.0.1:5500/Counter/index1.html">Counter</a>
-          </li>
-          <li>
-            <a href="http://127.0.0.1:5500/Color%20Picker/index.html">Color Picker</a>
-          </li>
-          <li>
-            <a href="http://127.0.0.1:5500/Quote%20Generator/index.html">Quotes Generator</a>
+            <a>My Profile</a>
           </li>
         </ul>
         {/* Social Media Links */}
