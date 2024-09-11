@@ -1,7 +1,7 @@
 import React from 'react';
 import './style.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTwitter, faFacebook, faBehance, faLinkedin, faSketch } from '@fortawesome/free-brands-svg-icons';
+import { faTwitter, faFacebook, faBehance, faLinkedin, faSketch, faGithub } from '@fortawesome/free-brands-svg-icons';
 export default function NavBar() {
   return (   
     <nav>
@@ -15,7 +15,7 @@ export default function NavBar() {
         {/* Links */}
         <ul className="links show-links">
           <li>
-            <a>My Profile</a>
+            <a>My React Profile</a>
           </li>
         </ul>
         {/* Social Media Links */}
@@ -41,8 +41,8 @@ export default function NavBar() {
             </a>
           </li>
           <li>
-            <a href="https://sketch.com">
-              <FontAwesomeIcon icon={faSketch} />
+            <a href="https://github.com">
+              <FontAwesomeIcon icon={faGithub} />
             </a>
           </li>
         </ul>

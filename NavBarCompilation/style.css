@@ -68,6 +68,7 @@ Global Styles
 }
 body {
   font-family: var(--ff-secondary);
+  background: var(--clr-grey-10);
   color: var(--clr-grey-1);
   line-height: 1.5;
   font-size: 0.875rem;
@@ -156,7 +157,7 @@ Navbar
 ===============
 */
 nav {
-  background-color:azure;
+  background: var(--clr-white);
   box-shadow: var(--light-shadow);
 }
 .nav-header {
@@ -185,14 +186,12 @@ nav {
 }
 .links a {
   color: var(--clr-grey-3);
-  font-size: 3rem;
+  font-size: 1rem;
   text-transform: capitalize;
   letter-spacing: var(--spacing);
   display: block;
   padding: 0.5rem 1rem;
   transition: var(--transition);
-  justify-content: center;
-
 }
 .links a:hover {
   background: var(--clr-primary-8);
@@ -200,18 +199,7 @@ nav {
   padding-left: 1.5rem;
 }
 .social-icons {
-  display: flex; /* Ensure the icons are displayed */
-  gap: 1rem; /* Optional: Adds spacing between icons */
-}
-
-.social-icons a {
-  font-size: 2rem; /* Adjust the size of the icons here */
-  color: var(--clr-primary-5); /* Optional: Adjust the color */
-  transition: color 0.3s ease; /* Optional: Smooth color transition on hover */
-}
-
-.social-icons a:hover {
-  color: var(--clr-primary-7); /* Optional: Adjust hover color */
+  display: none;
 }
 .links {
   height: 0;

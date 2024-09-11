@@ -9,18 +9,16 @@
     text-align: center;
 }
 .person p,h4{
-    padding:2rem ; /* Adds 20px space inside the element around the text */
-    border: 1px solid transparent; /* Optional: an invisible border */
-    text-align: center; /* Centers the text horizontally */
-    width: 500px; /* Set a fixed width for demonstration */
-    margin: 0 auto; /* Centers the entire box */
+    padding:1rem ; 
+    border: 1px solid transparent; 
+    text-align: center; 
+    width: 750px; 
+    margin: 0 auto; 
+    color:black
     
 }
-.person h3{
-    margin-bottom: 1%;
-}
 .person h4{
-    text-align: left;
+    text-align: center;
 }
 .person-picture{
     border-radius: 50%;
@@ -29,4 +27,17 @@
     object-fit: cover;
     margin-top: 10px;
 }
-
+.person li{
+    text-align: center;
+    padding: 0rem;
+    border: 1px solid transparent;
+    width: 500px;
+    margin: 0 auto;
+}
+footer {
+    width: 100%;
+    background-color:azure;
+    padding: 1px;
+    text-align: center;
+    position: relative;
+}

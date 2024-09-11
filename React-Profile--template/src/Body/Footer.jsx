@@ -3,9 +3,9 @@ import './index.css'
 export default function Footer(){
     return(
         <footer>
-            
-                &copy; {new Date().getFullYear()} My Food Website || Written by: Tom Hanks
-            
+            <p>
+                &copy; {new Date().getFullYear()} My Profile || Written by: Clayton Soronio
+            </p>
         </footer>
     )
 }
