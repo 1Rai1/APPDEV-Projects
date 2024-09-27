@@ -17,20 +17,27 @@ export default function QuotesGenerator() {
     ];
 
     const allQuotes = [...quotesSeneca, ...quotesMarcus]
-
     const [quote, setQuote] = useState("")
+    const [prevQuote, setPrevQuote] = useState("")
+
+    const getRandom = (quotes) => {
+        let randomIndex = Math.floor(Math.random() * quotes.length);
+        let newQuote = quotes[randomIndex];
+        while (newQuote === prevQuote) { 
+            randomIndex = Math.floor(Math.random() * quotes.length);
+            newQuote = quotes[randomIndex];
+        }
+        setPrevQuote(newQuote);  
+        return newQuote;
+    }
     const randomSeneca = () => {
-        let random
-        const randomIndex = Math.floor(Math.random() * quotesSeneca.length);
-        setQuote(quotesSeneca[randomIndex])
+        setQuote(getRandom(quotesSeneca))
     }
     const randomMarcus = () => {
-        const randomIndex = Math.floor(Math.random() * quotesMarcus.length);
-        setQuote(quotesMarcus[randomIndex])
+        setQuote(getRandom(quotesMarcus))
     }
     const getRandomQuote = () => {
-        const randomIndex = Math.floor(Math.random() * allQuotes.length);
-        setQuote(allQuotes[randomIndex])
+        setQuote(getRandom(allQuotes))
     }
 
     return (
@@ -41,6 +48,7 @@ export default function QuotesGenerator() {
             <div className="button-container">
                 <button className="btn-hero" onClick={randomSeneca}>Seneca Quote</button>
                 <button className="btn-hero" onClick={randomMarcus}>Marcus Quote</button>
+                <hr />
             </div>
             <div className="button-container">
             <button className="btn-hero" onClick={getRandomQuote}>Get Random Quote</button>
