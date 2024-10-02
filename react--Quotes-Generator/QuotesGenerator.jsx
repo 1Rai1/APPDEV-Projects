@@ -22,13 +22,13 @@ export default function QuotesGenerator() {
 
     const getRandom = (quotes) => {
         let randomIndex = Math.floor(Math.random() * quotes.length);
-        let newQuote = quotes[randomIndex];
+        let newQuote = quotes[randomIndex]
         while (newQuote === prevQuote) { 
             randomIndex = Math.floor(Math.random() * quotes.length);
-            newQuote = quotes[randomIndex];
+            newQuote = quotes[randomIndex]
         }
-        setPrevQuote(newQuote);  
-        return newQuote;
+        setPrevQuote(newQuote)
+        return newQuote
     }
     const randomSeneca = () => {
         setQuote(getRandom(quotesSeneca))
