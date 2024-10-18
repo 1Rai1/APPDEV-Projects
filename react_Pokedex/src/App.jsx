@@ -1,16 +1,16 @@
-import './App.css';
-import Pokedex from './Pokedex';
+import './CSS/App.css';
 import AllPoke from './AllPoke';
 import Footer from './Footer';
-import BackgroundVideo from './Background';
+import NavBar from './NavBar';
+
 function App() {
   return (
-   <>
-   <BackgroundVideo />
-   <AllPoke />
-   <Footer />
-   </>
-  )
+    <>
+      <NavBar />
+      <AllPoke />
+      <Footer />
+    </>
+  );
 }
 
 export default App;
