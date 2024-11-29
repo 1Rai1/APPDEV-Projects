@@ -1,0 +1,38 @@
+/* Global Styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #1a1a2e, #16213e); /* A dark theme */
+  color: #e0e0e0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensures the page covers the full viewport height */
+}
+
+/* Header Styling */
+header {
+  background: linear-gradient(to right, #0f0f17, #1a1a2e);
+  color: #e0e0e0;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Main Content Area */
+.main-content {
+  flex: 1; /* Pushes the footer to the bottom */
+  margin-left: 250px; /* Leaves space for the sidebar */
+  padding: 20px;
+  margin-top: 80px; /* Adjust for header height */
+}
+
+/* Footer Styling */
+footer {
+  background: linear-gradient(to right, #0f0f17, #1a1a2e);
+  color: #e0e0e0;
+  text-align: center;
+  padding: 10px;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3);
+  width: 100%;
+}
