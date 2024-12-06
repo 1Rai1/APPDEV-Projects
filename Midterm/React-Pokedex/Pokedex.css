@@ -1,0 +1,77 @@
+/* Pokedex.css */
+
+body {
+    background-color: #f7f7f7;
+    font-family: Arial, sans-serif;
+}
+
+.Pokedex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.Dex {
+    background-color: #fff;
+    border: 2px solid #ffcc00;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+.Dex img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+button.Search {
+    background-color: #ffcc00;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button.Search:hover {
+    background-color: #ffd700;
+}
+
+.error {
+    color: red;
+}
+
+.Information {
+    margin-top: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    width: 300px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.Information h2 {
+    margin: 0 0 10px 0;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.Information img {
+    width: 120px;
+    height: auto;
+    margin-bottom: 10px;
+}
